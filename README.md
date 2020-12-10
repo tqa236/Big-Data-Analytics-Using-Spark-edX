@@ -19,3 +19,13 @@ jupyter notebook
 ```
 
 Finally, open <http://localhost:8888> on a browser
+
+## Build from source
+
+```console
+docker build --tag big-data-spark .
+```
+
+```console
+docker run -it -p 8888:8888 -v "$(pwd):/home/ucsddse230/work" big-data-spark /bin/bash
+```
